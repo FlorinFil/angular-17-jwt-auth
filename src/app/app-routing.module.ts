@@ -17,7 +17,10 @@ const routes: Routes = [
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  { path: 'gallery', loadChildren: () => import('./modules/gallery/gallery.module').then(m => m.GalleryModule) },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'about', loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule) },
+  { path: 'contacts', loadChildren: () => import('./modules/contacts/contacts.module').then(m => m.ContactsModule) },
 ];
 
 @NgModule({
