@@ -15,6 +15,8 @@ import { BoardUserComponent } from './board-user/board-user.component';
 
 import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import { SlidesModule } from './modules/slides/slides.module';
+import { SlideshowModule } from './modules/slideshow/slideshow.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { SlidesModule } from './modules/slides/slides.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    SlidesModule
+    SlidesModule,
+    SlideshowModule,
+    NoopAnimationsModule
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
