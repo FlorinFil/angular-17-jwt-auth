@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import { StorageService } from './_services/storage.service';
 import { AuthService } from './_services/auth.service';
 import { EventBusService } from './_shared/event-bus.service';
+import { constants } from './app.constants';
 
 @Component({
   selector: 'app-root',
@@ -55,4 +56,5 @@ export class AppComponent {
       }
     });
   }
+  constants = constants;
 }
