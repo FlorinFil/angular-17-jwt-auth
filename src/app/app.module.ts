@@ -14,7 +14,7 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardUserComponent } from './board-user/board-user.component';
 
 import { httpInterceptorProviders } from './_helpers/http.interceptor';
-// import { SlidesModule } from './modules/slides/slides.module';
+import { SlidesModule } from './modules/slides/slides.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { httpInterceptorProviders } from './_helpers/http.interceptor';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    // SlidesModule
+    SlidesModule
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
